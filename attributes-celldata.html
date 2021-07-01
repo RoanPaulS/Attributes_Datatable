@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="lib\jquery-3.5.1.js"></script>
+    <script src="lib\jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="lib\jquery.dataTables.min.css">
+    <script>
+        $(document).ready(function()
+        {
+            $("#myplayers").DataTable(
+                {
+                    "ordering":false,
+                    "paging":false,
+                    "info":false
+                }
+            );
+        })
+    </script>
+    <style>
+        h1
+        {
+            text-align: center;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>My All Time IPL XI</h1>
+    <table class="display" width="100%" id="myplayers">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-search="David Warner">D.Warner</td>
+                <td>Opening Batsmen</td>
+                <td>Australia</td>
+                <td>30</td>
+                <td>Wed 25th Aug 1990</td>
+                <td>$175,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Rohit Sharma">R.Sharma</td>
+                <td>Opening Batsmen</td>
+                <td>India</td>
+                <td>29</td>
+                <td>Mon 25th jul 1991</td>
+                <td>$250,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Virat Kohli">V.Kohli</td>
+                <td>Batsmen <b>(vc)</b></td>
+                <td>India</td>
+                <td>28</td>
+                <td>Tue 25th jul 1992</td>
+                <td>$300,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Suresh Raina">S.Raina</td>
+                <td>Batsmen</td>
+                <td>India</td>
+                <td>32</td>
+                <td>Mon 25th jul 1988</td>
+                <td>$175,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Ab De Villiers">Ab.D.Villiers</td>
+                <td>Batsmen</td>
+                <td>South Africa</td>
+                <td>34</td>
+                <td>Mon 11th Nov 1986</td>
+                <td>$300,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Mahendra Singh Dhoni">MS.Dhoni</td>
+                <td>Wicket-keeper Batsmen <b>(c)</b></td>
+                <td>India</td>
+                <td>34</td>
+                <td>Mon 7th jul 1986</td>
+                <td>$300,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Hardik Pandya">H.Pandya</td>
+                <td>All Rounder</td>
+                <td>India</td>
+                <td>26</td>
+                <td>Mon 25th jul 1994</td>
+                <td>$175,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Dwyane Bravo">D.Bravo</td>
+                <td>All Rounder</td>
+                <td>West Indies</td>
+                <td>31</td>
+                <td>Mon 25th jul 1989</td>
+                <td>$200,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Amit Mishra">A.Mishra</td>
+                <td>Leg Spinner</td>
+                <td>India</td>
+                <td>35</td>
+                <td>Mon 25th jul 1985</td>
+                <td>$150,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Jasprit Bumrah">J.Bumrah</td>
+                <td>Fast Bowler</td>
+                <td>India</td>
+                <td>26</td>
+                <td>Mon 25th jul 1994</td>
+                <td>$250,000.00</td>
+            </tr>
+            <tr>
+                <td data-search="Lashith Malinga">L.Malinga</td>
+                <td>Fast Bowler</td>
+                <td>Sri Lanka</td>
+                <td>36</td>
+                <td>Mon 25th jul 1984</td>
+                <td>$200,000.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
